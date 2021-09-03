@@ -1,3 +1,5 @@
+#include <vector>
+
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -10,7 +12,7 @@ struct TreeNode {
 class Node {
 public:
     int val;
-    vector<Node*> children;
+    std::vector<Node*> children;
 
     Node() {}
 
@@ -18,7 +20,7 @@ public:
         val = _val;
     }
 
-    Node(int _val, vector<Node*> _children) {
+    Node(int _val, std::vector<Node*> _children) {
         val = _val;
         children = _children;
     }

@@ -6,9 +6,10 @@
 由于返回类型是整数，结果只保留整数的部分，小数部分将被舍去。
 
 */
+#include <vector>
 class Solution {
 public:
-    int maximumProduct(vector<int>& nums) {
+    int maximumProduct(std::vector<int>& nums) {
         std::sort(nums.begin(), nums.end(), [](int a, int b) -> bool {return a < b;});
 
         int n = nums.size();

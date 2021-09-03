@@ -1,9 +1,11 @@
 /*
 给定 n 个整数，找出平均数最大且长度为 k 的连续子数组，并输出该最大平均数。
 */
+#include <vector>
+
 class Solution {
 public:
-    double findMaxAverage(vector<int>& nums, int k) {
+    double findMaxAverage(std::vector<int>& nums, int k) {
         if (nums.size() == 0)
             return 0;
         if (nums.size() < k)
