@@ -5,8 +5,11 @@
  *     ListNode *next;
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
+ * 两个链表的第一个公共节点
  */
 #include "ListNode.hpp"
+using namespace std;
+
 class Solution {
 public:
     // Set 时间 nlogn, 空间logn
